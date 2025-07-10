@@ -40,7 +40,7 @@ const JoinWaitlist = () => {
   };
 
   return (
-    <section id="contact" className="py-16 px-4 md:px-12 bg-gray-50">
+    <section id="contact" className="py-16 px-4 md:px-12 ">
       <SectionTitle
         title="Join Our Waitlist"
         subtitle="Be the first to experience the smart university platform."
