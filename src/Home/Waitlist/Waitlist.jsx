@@ -19,7 +19,7 @@ const JoinWaitlist = () => {
     setMessage("Submitting...");
 
     try {
-      const res = await fetch("http://localhost:5000/waitlist", {
+      const res = await fetch("https://unimanage-server-side.vercel.app/waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

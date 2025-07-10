@@ -1,12 +1,97 @@
-# React + Vite
+# UniManage – Smart University Web App (Client Side)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Live Site:** [https://unimanage.netlify.app](https://unimanage.netlify.app)
 
-Currently, two official plugins are available:
+UniManage is a smart university platform that connects students, faculty, and admins — streamlining course management, event updates, notices, and academic communication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔍 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 Secure Authentication (Firebase)
+- 📚 Course & Routine Viewer
+- 📢 Dynamic Notice Board
+- 🗓️ Event Management System
+- 🧑‍🏫 Role-based Dashboard Support
+- 💳 Join Waitlist Integration
+- 💡 Responsive Design (Mobile-First)
+- 📈 Pricing Plan Showcase
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend Framework
+- **React Router DOM** – Client-side Routing
+- **Tailwind CSS + DaisyUI** – UI Design
+- **Firebase** – Authentication
+- **AOS** – Scroll Animations
+- **Express + MongoDB** – Backend (see server repo)
+
+---
+
+## 📁 Folder Structure
+
+```
+
+src/
+├── assets/           # Logos, images
+├── components/       # Shared components like Navbar, Footer, SectionTitle
+├── pages/            # Main page components (About, Features, Pricing, etc.)
+├── App.jsx           # App entry point with routes
+└── main.jsx          # ReactDOM root render
+
+````
+
+---
+
+## 🔗 Backend Repository
+
+👉 [unimanage-server-side](https://github.com/Ahammad204/unimanage-server-side)
+
+---
+
+## 🧪 Setup Instructions
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/Ahammad204/unimanage-client-side.git
+cd unimanage-client-side
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Firebase
+
+Create a `.env` file:
+
+```env
+VITE_API_KEY=your_firebase_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_msg_sender_id
+VITE_APP_ID=your_app_id
+VITE_SERVER_URL=http://localhost:5000  # or your hosted backend
+```
+
+### 4. Run the Project
+
+```bash
+npm run dev
+```
+
+
+## 👨‍💻 Developer
+
+**Name:** Kazi Ahammad Ullah
+**Role:** Frontend Developer
+
+---
+
+
