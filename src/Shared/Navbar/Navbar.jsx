@@ -1,26 +1,74 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/navlogo.png";
+import { useState } from "react";
 
 const Navbar = () => {
+    const [active, setActive] = useState("home");
+      const handleClick = (name) => {
+    setActive(name);
+  };
+
   const navLink = (
     <>
-      <li className="m-2 md:mr-5 text-lg hover:text-[#2baffc] hover:underline">
-        <NavLink to="/">Home</NavLink>
+      <li className="m-2 md:mr-5 text-lg">
+        <a
+          href="#home"
+          onClick={() => handleClick("home")}
+          className={
+            active === "home"
+              ? "text-[#2baffc] underline"
+              : "hover:text-[#2baffc] hover:underline"
+          }
+          end
+        >
+          Home
+        </a>
       </li>
-      <li className="m-2 md:mr-5 text-lg hover:text-[#2baffc] hover:underline">
-        <a href="#about">About</a>
+      <li className="m-2 md:mr-5 text-lg">
+        <a
+          href="#about"
+          onClick={() => handleClick("about")}
+          className={
+            active === "about"
+              ? "text-[#2baffc] underline"
+              : "hover:text-[#2baffc] hover:underline"
+          }
+        >
+          About
+        </a>
       </li>
-      <li className="m-2 md:mr-5 text-lg hover:text-[#2baffc] hover:underline">
-        <a href="#features">Features</a>
+      <li className="m-2 md:mr-5 text-lg">
+        <a
+          href="#features"
+          onClick={() => handleClick("features")}
+          className={
+            active === "features"
+              ? "text-[#2baffc] underline"
+              : "hover:text-[#2baffc] hover:underline"
+          }
+        >
+          Features
+        </a>
       </li>
-      <li className="m-2 md:mr-5 text-lg hover:text-[#2baffc] hover:underline">
-        <a href="#education">Education</a>
+      <li className="m-2 md:mr-5 text-lg">
+        <a
+          href="#education"
+          onClick={() => handleClick("education")}
+          className={
+            active === "education"
+              ? "text-[#2baffc] underline"
+              : "hover:text-[#2baffc] hover:underline"
+          }
+        >
+          Education
+        </a>
       </li>
     </>
   );
 
+
   return (
-    <div className="navbar  bg-base-100 md:shadow-xl ">
+    <div className="navbar fixed z-10 max-w-screen-xl  bg-base-100 md:shadow-xl ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

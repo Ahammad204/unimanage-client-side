@@ -19,7 +19,7 @@ const Banner = () => {
     };
 
     return (
-        <div className="banner-carousel">
+        <div className="banner-carousel" id='home'>
            <Carousel className='text-center' showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
                 <div>
                     <img src={img1} alt="Slide 1" />

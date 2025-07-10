@@ -15,7 +15,7 @@ const SectionTitle = ({ title, subtitle }) => {
         />
       </h2>
       {subtitle && (
-        <p className="text-text-secondary mt-2 text-base md:text-lg">
+        <p className=" mt-2 text-base md:text-lg ">
           {subtitle}
         </p>
       )}
