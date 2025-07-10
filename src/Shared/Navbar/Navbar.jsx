@@ -16,8 +16,8 @@ const Navbar = () => {
           onClick={() => handleClick("home")}
           className={
             active === "home"
-              ? "text-[#2baffc] underline"
-              : "hover:text-[#2baffc] hover:underline"
+              ? "text-[#2baffc]  "
+              : "hover:text-[#2baffc]  "
           }
           end
         >
@@ -30,8 +30,8 @@ const Navbar = () => {
           onClick={() => handleClick("about")}
           className={
             active === "about"
-              ? "text-[#2baffc] underline"
-              : "hover:text-[#2baffc] hover:underline"
+              ? "text-[#2baffc]  "
+              : "hover:text-[#2baffc]  "
           }
         >
           About
@@ -43,8 +43,8 @@ const Navbar = () => {
           onClick={() => handleClick("features")}
           className={
             active === "features"
-              ? "text-[#2baffc] underline"
-              : "hover:text-[#2baffc] hover:underline"
+              ? "text-[#2baffc]  "
+              : "hover:text-[#2baffc]  "
           }
         >
           Features
@@ -52,15 +52,15 @@ const Navbar = () => {
       </li>
       <li className="m-2 md:mr-5 text-lg">
         <a
-          href="#education"
-          onClick={() => handleClick("education")}
+          href="#price"
+          onClick={() => handleClick("price")}
           className={
-            active === "education"
-              ? "text-[#2baffc] underline"
-              : "hover:text-[#2baffc] hover:underline"
+            active === "price"
+              ? "text-[#2baffc]  "
+              : "hover:text-[#2baffc] "
           }
         >
-          Education
+          Price
         </a>
       </li>
     </>
