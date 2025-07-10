@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import About from '../About/About';
 import Features from '../Features/Features';
 import Pricing from '../price/price';
+import JoinWaitlist from '../Waitlist/Waitlist';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <About></About>
             <Features></Features>
             <Pricing></Pricing>
+            <JoinWaitlist></JoinWaitlist>
         </>
     );
 };
